@@ -12,7 +12,9 @@ export default function Home (props) {
                 onClick={props.about}
                 />
             <div className="Home__Intro">
-                <p>dev. gamer. bon vivant.</p>
+                <span>dev. </span>
+                <span>gamer. </span>
+                <span>bon vivant.</span>
             </div>
         </div>
     )

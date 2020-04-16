@@ -21,12 +21,22 @@ function App() {
   
   function gotoContactMe(event) {
     event.preventDefault();
-    setContent(<ContactMe />);
+    setContent(<ContactMe  gitHub={openGitHub} linkedIn={openLinkedIn}/>);
   }
   
   function gotoAboutMe(event) {
     event.preventDefault();
     setContent(<AboutMe />)
+  }
+
+  function openGitHub() {
+    const win = window.open('https://github.com/zckramer');
+    win.focus();
+  }
+
+  function openLinkedIn() {
+    const win = window.open('https://www.linkedin.com/in/zckramer/');
+    win.focus();
   }
 
   return (
