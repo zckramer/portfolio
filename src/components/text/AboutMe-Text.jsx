@@ -19,6 +19,10 @@ export default function AboutMeText () {
                 certification in Software Development.
             </p>
             <hr />
+            <p>
+                I am currently focusing on my React knowledge, doing hackathons, codejams, and just trying to keep adding green squares
+                to my GitHub contributions chart! 
+            </p>
         </article>
     )
 }
