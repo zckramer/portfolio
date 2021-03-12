@@ -10,12 +10,11 @@ export default function ImageCarousel (props) {
         <div className="Image-Carousel">
             {props.images.map((image, index) => {
                 return <img 
-                        key={index} 
-                        src={image} 
-                        alt="placekitten" 
-                        className="Image-Carousel_Image_Front" 
-                        onClick={()=>handleOnClick(image)}
-
+                            key={index} 
+                            src={image} 
+                            alt="placekitten" 
+                            className="Image-Carousel_Image_Front" 
+                            onClick={()=>handleOnClick(image)}
                         />
             })}
             
