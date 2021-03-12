@@ -32,6 +32,22 @@ h2 {
   background-color: whitesmoke;
 }
 
+.Header-Button {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.Header-Button:hover {
+  background-color: royalblue;
+  color: whitesmoke;
+  font-size: large;
+}
+
 .Home {
   display: flex;
   margin-top: 2rem;
@@ -68,6 +84,8 @@ li {
 .Project-List-Item {
   transition: .2s;
   border-bottom: 1px solid black;
+  cursor: pointer;
+
 }
 
 .Project-List-Item:hover {
