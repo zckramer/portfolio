@@ -2,8 +2,8 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-        <div>
-            Nav Bar!
+        <div className='Project__NavBar'>
+            The Nav Bar project description
         </div>
     )
 }
