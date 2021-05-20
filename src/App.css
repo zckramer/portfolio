@@ -1,8 +1,24 @@
+html{
+  background-image: url('/src/images/Subtle-Dots-White-Tileable-pattern.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  height: 100%;
+}
+
 .App {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.About-Me{
   display: flex;
-  text-align: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+#About-Me__Text{
+
 }
 
 .Content {
@@ -28,9 +44,28 @@
   align-items: center;
 }
 
-
-
-.Home > #image__headshot {
+#image__headshot {
   width: 15rem;
   margin: 1rem;
+}
+
+.Main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+
+#Projects-Bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.Projects-Bar_Item{
+
 }
