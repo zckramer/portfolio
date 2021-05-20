@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-        <div className='Project__NavBar'>
+        <div className='Project-Panel'>
             The Nav Bar project description
         </div>
     )

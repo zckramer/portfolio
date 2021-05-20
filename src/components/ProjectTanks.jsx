@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Tanks = (props) => {
+const Tanks = () => {
     return (
-        <div className='Project__Tanks'>
+        <div className='Project-Panel'>
             Tank's Ironclad meats project description
         </div>
     )

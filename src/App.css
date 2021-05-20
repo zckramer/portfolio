@@ -2,12 +2,11 @@ html{
   background-image: url('/src/images/Subtle-Dots-White-Tileable-pattern.jpg');
   background-repeat: repeat;
   background-size: contain;
-  height: 100%;
-  width: 100%;
 }
 
 .App {
   font-family: 'Roboto Mono', monospace;
+  text-align: center;
 }
 
 .About-Me{
@@ -30,6 +29,21 @@ html{
   box-shadow: 0 0 .7rem darkblue;
 }
 
+.Header-Button{
+  user-select: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  min-width: max-content;
+  background-color: transparent;
+  transition: .4s;
+}
+
+.Header-Button:hover{
+  background-color: blue;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
 .Home {
   display: flex;
   margin-top: 2rem;
@@ -48,8 +62,8 @@ html{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-
+  width: 100vw;
+  min-height: 100%;
 }
 
 #Projects-Bar{
@@ -61,6 +75,7 @@ html{
 }
 
 .Projects-Bar__Item{
+  user-select: none;
   font-weight: bold;
   margin: 1rem;
   transition: .6s;
@@ -68,6 +83,6 @@ html{
 }
 
 .Projects-Bar__Item:hover{
-  outline: skyblue solid 2px;
+  outline: blue solid 2px;
   cursor: pointer;
 }

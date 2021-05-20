@@ -4,7 +4,7 @@ import NavBar from './ProjectNavBar';
 import YourPageHere from './ProjectYourPageHere';
 import PenguinRush from './ProjectPenguinRush';
 
-const AboutMe = (props) => {
+const AboutMe = () => {
     const [projectFocus, setProjectFocus] = useState(<div>initial focus</div>)
     
     function changeProjectFocus (project) {

@@ -2,7 +2,7 @@ import React from 'react';
 
 const YourPageHere = () => {
     return (
-        <div className='Project__YourPageHere'>
+        <div className='Project-Panel'>
             YourPageHere project description
         </div>
     )
