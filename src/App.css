@@ -44,7 +44,6 @@ html{
   
 }
 
-
 .Header {
   display: flex;
   position: fixed;
@@ -92,19 +91,13 @@ html{
   border-radius: 50%;
   margin: 3rem;
   padding: 3rem;
+  z-index: -1;
 }
 
 .Home__ImageWheel {
   display:flex;
   align-items: center;
   justify-content: center;
-}
-
-#image__headshot {
-  border-radius: 50%;
-  width: 15rem;
-  margin: 1rem;
-  z-index: 1;
 }
 
 #reactImage {
@@ -121,7 +114,7 @@ html{
   align-items: center;
   justify-content: center;
   grid-template-columns:repeat(2, 1fr);
-  z-index: -1;
+  /* z-index: 1; */
 }
 
 .ImageWheel__Item {
@@ -129,6 +122,14 @@ html{
   width: 150px;
   height: 150px;
   margin: auto;
+  z-index: 1;
+}
+
+#image__headshot {
+  border-radius: 50%;
+  width: 15rem;
+  margin: 1rem;
+  /* z-index: 1; */
 }
 
 .Main {
