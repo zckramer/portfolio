@@ -10,7 +10,7 @@ export default function AboutMe (props) {
         earning a Bachelors degree of Science, I studied JavaScript, HTML and CSS in my spare time. When I was 
         met with competition in my job search, I decided to update my skills set and get training in full stack 
         development by attending We Can Code IT, in the fall of 2019. I graduated December 11th, 2019 with a
-        certification in Software Development</p>
+        certification in Software Development.</p>
         </div>
     )
 }
