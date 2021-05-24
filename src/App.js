@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-    <div className="App" style={{backgroundImage:`url(${BackgroundPattern})`}}>
+    <div className="App" style={{backgroundImage:`url(${BackgroundPattern})`, backgroundRepeat: 'repeat'}}>
       <Header gotoHome={gotoHome} gotoAboutMe={gotoAboutMe} gotoMyProjects={gotoMyProjects} gotoContactMe={gotoContactMe}/>
       <div className="Main">
         {content}

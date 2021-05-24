@@ -25,40 +25,50 @@ html{
   text-align: center;
 }
 
-.About-Me{
+.About-Me {
   display: flex;
+  position: absolute;
+  top: 3%;
+  bottom: 2%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 90%;
+  height: 80%;
+  overflow-y: auto;
+  padding-bottom: 5%;
 }
 
-#About-Me__Text{
+#About-Me__Text {
+  overflow-y: auto;
   
 }
 
 
 .Header {
   display: flex;
-  justify-content: space-between;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  justify-content: space-evenly;
   align-items: center;
   border-bottom: 2px solid blue;
   box-shadow: 0 0 .7rem darkblue;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
 }
 
-.Header-Button{
+.Header-Button {
   user-select: none;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
   min-width: max-content;
   background-color: transparent;
   transition: .4s;
   z-index: 1;
 }
 
-.Header-Button:hover{
+.Header-Button:hover {
   background-color: blue;
   color: whitesmoke;
   cursor: pointer;
@@ -73,15 +83,18 @@ html{
   min-height: 100%;
 }
 
-.Home__Header{
+.Home__Header {
   display: flex;
-  margin-top: 2rem;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  background-color: rgba(245, 245, 245, 0.5);
+  border-radius: 50%;
+  margin: 3rem;
+  padding: 3rem;
 }
 
-.Home__ImageWheel{
+.Home__ImageWheel {
   display:flex;
   align-items: center;
   justify-content: center;
@@ -94,11 +107,11 @@ html{
   z-index: 1;
 }
 
-#reactImage{
+#reactImage {
   animation: rev-rotation 3s infinite linear;
 }
 
-.ImageWheel{
+.ImageWheel {
   position: fixed;
   display: grid;
   height: 450px;
@@ -111,14 +124,14 @@ html{
   z-index: -1;
 }
 
-.ImageWheel__Item{
+.ImageWheel__Item {
   animation: rev-rotation 12s infinite linear;
   width: 150px;
   height: 150px;
   margin: auto;
 }
 
-.Main{
+.Main {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -131,7 +144,7 @@ html{
   max-height: 100%;
 }
 
-#Projects-Bar{
+#Projects-Bar {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -139,7 +152,7 @@ html{
   width: 100%;
 }
 
-.Projects-Bar__Item{
+.Projects-Bar__Item {
   user-select: none;
   font-weight: bold;
   margin: 1rem;
@@ -147,7 +160,7 @@ html{
   outline: transparent solid 2px;
 }
 
-.Projects-Bar__Item:hover{
+.Projects-Bar__Item:hover {
   outline: blue solid 2px;
   cursor: pointer;
 }
