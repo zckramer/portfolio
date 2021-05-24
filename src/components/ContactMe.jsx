@@ -1,6 +1,8 @@
 import React from 'react';
+import linkedinIcon from '../images/linkedinIcon.png';
+import githubIcon from '../images/GitHub-Mark.png';
 
-export default function ContactMe (props) {
+export default function ContactMe () {
     return (
         <div className="Contact-Me">
             <h2>Contact Me</h2>
@@ -12,6 +14,12 @@ export default function ContactMe (props) {
                 <li>have any questions about me or what I do</li>
             </ul>
             <p>... I can help! </p>
+            <div className='Social-Links__Container'>
+                <img onClick={()=>window.open('https://www.linkedin.com/in/zckramer/')} alt='linkedin icon' src={linkedinIcon} className='Social-Link'/>
+                <p>zckramer83@gmail.com</p>
+                <img onClick={()=>window.open('https://github.com/zckramer')} alt='github icon' src={githubIcon} className='Social-Link'/>
+
+            </div>
         </div>
     )
 }

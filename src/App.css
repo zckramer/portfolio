@@ -23,6 +23,8 @@ html{
 .App {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
+  /* background-repeat: repeat; */
+  /* background-image: ; */
 }
 
 .About-Me {
@@ -41,7 +43,6 @@ html{
 
 #About-Me__Text {
   overflow-y: auto;
-  
 }
 
 .Header {
@@ -164,4 +165,17 @@ html{
 .Projects-Bar__Item:hover {
   outline: blue solid 2px;
   cursor: pointer;
+}
+
+.Social-Link {
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.Social-Links__Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
