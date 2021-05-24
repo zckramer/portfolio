@@ -1,7 +1,4 @@
 html{
-  background-image: url('/src/images/Subtle-Dots-White-Tileable-pattern.jpg');
-  background-repeat: repeat;
-  background-size: contain;
 }
 
 @keyframes rotation {
@@ -37,8 +34,9 @@ html{
 }
 
 #About-Me__Text{
-
+  
 }
+
 
 .Header {
   display: flex;
@@ -46,6 +44,8 @@ html{
   align-items: center;
   border-bottom: 2px solid blue;
   box-shadow: 0 0 .7rem darkblue;
+  z-index: 1;
+  background-color: white;
 }
 
 .Header-Button{
@@ -55,6 +55,7 @@ html{
   min-width: max-content;
   background-color: transparent;
   transition: .4s;
+  z-index: 1;
 }
 
 .Header-Button:hover{
@@ -90,41 +91,44 @@ html{
   border-radius: 50%;
   width: 15rem;
   margin: 1rem;
+  z-index: 1;
 }
 
 #reactImage{
   animation: rev-rotation 3s infinite linear;
 }
 
-
 .ImageWheel{
   position: fixed;
-  display: flex;
-  min-height: 450px;
-  min-width: 450px;
+  display: grid;
+  height: 450px;
+  width: 450px;
   top: 40%;
-  /* left: 50%; */
   animation: rotation 12s infinite linear;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  /* grid-template-columns:repeat(2, 1fr) */
+  grid-template-columns:repeat(2, 1fr);
+  z-index: -1;
 }
 
 .ImageWheel__Item{
   animation: rev-rotation 12s infinite linear;
   width: 150px;
   height: 150px;
+  margin: auto;
 }
 
 .Main{
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 100%;
+  top: 0%;
+  left: 0%;
+  min-height: 100vh;
+  max-height: 100%;
 }
 
 #Projects-Bar{
