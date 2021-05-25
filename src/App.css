@@ -115,10 +115,10 @@ html{
   align-items: center;
   justify-content: center;
   grid-template-columns:repeat(2, 1fr);
-  /* z-index: 1; */
 }
 
 .ImageWheel__Item {
+  user-select: none;
   animation: rev-rotation 12s infinite linear;
   width: 150px;
   height: 150px;
@@ -130,7 +130,6 @@ html{
   border-radius: 50%;
   width: 15rem;
   margin: 1rem;
-  /* z-index: 1; */
 }
 
 .Main {
@@ -171,6 +170,13 @@ html{
   height: 3rem;
   width: 3rem;
   cursor: pointer;
+  transition: .2s;
+}
+
+.Social-Link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 2px 1px;
+  border-radius: 3px;
 }
 
 .Social-Links__Container {
