@@ -23,8 +23,6 @@ html{
 .App {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
-  /* background-repeat: repeat; */
-  /* background-image: ; */
 }
 
 .About-Me {
@@ -36,13 +34,17 @@ html{
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 80%;
+  height: 100%;
   overflow-y: auto;
   padding-bottom: 5%;
 }
 
 #About-Me__Text {
   overflow-y: auto;
+}
+
+.Contact-Me__List-Item {
+  list-style: none;
 }
 
 .Header {

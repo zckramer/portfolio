@@ -8,10 +8,10 @@ export default function ContactMe () {
             <h2>Contact Me</h2>
             <p>Why should you contact me? If you...</p>
             <ul>
-                <li>need a website built</li>
-                <li>want to play Heroes of the Storm together</li>
-                <li>have a job opportunity</li>
-                <li>have any questions about me or what I do</li>
+                <li className='Contact-Me__List-Item'>need a website built</li>
+                <li className='Contact-Me__List-Item'>want to play Heroes of the Storm together</li>
+                <li className='Contact-Me__List-Item'>have a job opportunity</li>
+                <li className='Contact-Me__List-Item'>have any questions about me or what I do</li>
             </ul>
             <p>... I can help! </p>
             <div className='Social-Links__Container'>
