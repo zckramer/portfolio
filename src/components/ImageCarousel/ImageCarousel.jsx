@@ -6,6 +6,8 @@ const ImageCarousel = (props) => {
     
     let carouselIndex = 0;
     
+    const images = props.images;
+
     function carouselIncrement () {
         carouselIndex >= props.images.length - 1 ? carouselIndex = 0 : carouselIndex = carouselIndex + 1;
     }
@@ -13,9 +15,10 @@ const ImageCarousel = (props) => {
     useEffect(() => {
         setInterval(()=> {
             carouselIncrement();
-            setImageFromCarousel(props.images[carouselIndex])
+            setImageFromCarousel(images[carouselIndex])
+            console.log("tick! ", carouselIndex)
         }, 4000);
-        return clearInterval();
+// eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
